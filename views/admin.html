@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="/public/style.css">
+
+    <!-- Firebase SDK (Version 9 or later uses modular imports, so we use older syntax) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+
+
+    <!-- Your custom admin script -->
+    <script defer src="/public/admin-script.js"></script>
+
+</head>
+<body>
+    <header>
+        <h1>Admin Panel</h1>
+    </header>
+    
+    <section id="upload-section">
+        <h2>Upload Wallpaper</h2>
+        <form id="upload-form">
+            <label for="name">Wallpaper Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="image-file">Choose Image:</label>
+            <input type="file" id="image-file" accept="image/*" required>
+            
+            <label for="instagram-link">Instagram Post Link:</label>
+            <input type="url" id="instagram-link" required>
+            
+            <button type="submit">Upload</button>
+        </form>
+    </section>
+    
+
+</body>
+</html>

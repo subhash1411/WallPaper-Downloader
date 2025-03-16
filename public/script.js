@@ -1,4 +1,4 @@
-
+/*
 document.addEventListener("DOMContentLoaded", () => {
     const gallery = document.getElementById("wallpaper-gallery");
 
@@ -36,3 +36,5 @@ document.addEventListener("DOMContentLoaded", () => {
 
     loadWallpapers();
 });
+
+*/

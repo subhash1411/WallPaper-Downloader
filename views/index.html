@@ -5,15 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WallPaper Downloader</title>
     <link rel="stylesheet" href="/public/style.css">
+
+    <!-- Firebase SDK (Using v8 for browser compatibility) -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <!-- Your JavaScript file for fetching wallpapers -->
+    <script defer src="/public/wallpaper-script.js"></script>
+
 </head>
 <body>
     <header>
         <h1>Wallpaper Downloader</h1>
     </header>
-    
-    <section id="wallpaper-gallery">
-        <!-- Wallpapers will be dynamically loaded here -->
-    </section>
+ 
+    <div id="wallpaper-gallery" class="gallery">
+        <!-- Wallpapers will be added here dynamically -->
+    </div>
     
     <script src="/public/script.js"></script>
 </body>
